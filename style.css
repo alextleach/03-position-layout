@@ -43,23 +43,35 @@ overflow: auto;
 
 img.character--cell__image {
   width: 30%;
-  border-radius: 0.5em 0.5em 0 0;
   float: left;
 }
 img.weapon--cell__image {
   width: 50%;
-  border-radius: 0.5em 0.5em 0 0;
+  float: right;
+  display: inline;
+}
+img.ability--cell__image {
+  width: 16%;
+  margin: 0 0.5rem;
   float: right;
 }
+
 img.center--target__image {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  display: inline-block;
+  display: inline;
 }
 
 .character__stats {
   font-family: helvetica, sans-serif;
   font-size: 2rem;
   margin: 0;
+}
+
+.weapon__stats {
+  font-family: helvetica, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  float: right;
 }
