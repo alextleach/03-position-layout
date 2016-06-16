@@ -1,6 +1,6 @@
 body {
   margin: 0 0 2rem;
-  font-family: arial, sans-serif;
+  font-family: arial, 'Share Tech Mono', monospace;
   font-size: 10pt;
   color: #fff;
   background: #2b2b2b;
@@ -21,24 +21,44 @@ width: 90%;
 }
 
 .character--cell {
+  background: blue;
   width: calc(100% / 3 - 1rem - 1rem);
   margin: 1rem 1rem;
-  height: 90%;
-  float: left;
+  position: fixed;
+  bottom: 3.5rem;
+  left: 1rem;
+  padding-left: 2rem;
   overflow: auto;
+  display: block;
+  transform: rotate(-5deg);
 }
 
 .character__content {
 width: auto;
-padding: 1.5rem;
+padding-bottom: 2.5rem;
 overflow: auto;
 }
+
+.center--cell {
+  /*background: yellow;*/
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: auto;
+  display: inline-block;
+}
 .weapon--cell {
+  background: green;
   width: calc(100% / 3 - 1rem - 1rem);
   margin: 1rem 1rem;
-  height: 90%;
-  float: right;
+  position: fixed;
+  bottom: 2rem;
+  right: 0;
+  padding-right: 2rem;
   overflow: auto;
+  display: block;
+  transform: rotate(5deg);
 }
 
 img.character--cell__image {
@@ -47,31 +67,68 @@ img.character--cell__image {
 }
 img.weapon--cell__image {
   width: 50%;
-  float: right;
-  display: inline;
+  position: relative;
+  left: 1.5rem;
+
+
 }
 img.ability--cell__image {
   width: 16%;
-  margin: 0 0.5rem;
-  float: right;
+  margin: 0 0.5rem 1rem 0.5rem;
+  position: relative;
+  bottom: 1rem;
+  left: 1rem;
+
 }
 
 img.center--target__image {
-  width: 50%;
-  margin: 0 auto;
+  display: block;
+  margin: auto;
   text-align: center;
-  display: inline;
+  width: 70%;
+
 }
 
 .character__stats {
-  font-family: helvetica, sans-serif;
-  font-size: 2rem;
+  font-family: 'share tech mono', monospace;
+  font-size: 0.8rem;
   margin: 0;
+  position: relative;
+  top: 2rem;
+  left: 1rem;
+  -webkit-text-stroke: 0.003rem #a5d2ee;
+  text-shadow: 0.5em rgba(#545454,.50);
+}
+.character__stats strong {
+font-size: 2rem;
 }
 
 .weapon__stats {
-  font-family: helvetica, sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 1rem;
   margin: 0;
   float: right;
+}
+
+.weapon__stats img {
+  vertical-align: middle;
+}
+
+.center--cell p {
+  font-family: 'share tech mono', monospace;
+  font-size: 2.2em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-text-stroke: 0.005rem #5c5c5c;
+  text-shadow: 1em rgba(#545454,.75);
+  opacity: 0.8;
+  position: relative;
+  top: 1rem;
+
+}
+.center--cell strong {
+  color: #c00;
 }
