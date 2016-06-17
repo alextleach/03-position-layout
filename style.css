@@ -29,7 +29,7 @@ width: 90%;
   width: calc(100% / 3 - 1rem - 1rem);
   margin: 1rem 1rem;
   position: fixed;
-  bottom: 3.5rem;
+  bottom: 4rem;
   left: 1rem;
   padding-left: 2rem;
   overflow: auto;
@@ -46,7 +46,7 @@ overflow: auto;
 .center--cell {
   /*background: yellow;*/
   position: absolute;
-  top: 40%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%,-50%);
   overflow: auto;
@@ -72,7 +72,7 @@ img.character--cell__image {
 img.weapon--cell__image {
   width: 50%;
   position: relative;
-  left: 2.5rem;
+  left: 2rem;
 
 
 }
@@ -89,7 +89,7 @@ img.center--target__image {
   display: block;
   margin: auto;
   text-align: center;
-  width: 50%;
+  width: 40%;
 
 }
 
@@ -117,6 +117,29 @@ font-size: 2rem;
 
 .weapon__stats img {
   vertical-align: middle;
+}
+
+.weapon__stats-numbers {
+   font-family: 'share tech mono', monospace;
+   font-size: 0.8rem;
+   margin: 0;
+  position: absolute;
+  top: 1.5rem;
+  right: 5rem;
+  -webkit-text-stroke: 0.003rem #a5d2ee;
+  text-shadow: 0.5em rgba(#545454,.50);
+ }
+
+ .weapon__stats-numbers strong {
+ font-size: 2rem;
+ }
+
+.ability__key {
+font-size: 1.6rem;
+letter-spacing: 1rem;
+position: absolute;
+bottom: 3.5rem;
+left: 3rem;
 }
 
 .center--cell p {
