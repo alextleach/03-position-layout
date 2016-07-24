@@ -1,3 +1,173 @@
 body {
+  margin: 0 auto;
+  font-family: arial, 'Share Tech Mono', monospace;
+  font-size: 10pt;
+  color: #fff;
+  background: #2b2b2b;
+  background: url("http://i.imgur.com/a6yVVuG.jpg");
+  background-position: top center;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+
+main {
+margin: 2rem auto;
+width: 100%;
+overflow: hidden;
+display: inline-block;
+}
+
+.main--cell {
+margin: 0 auto;
+overflow: hidden;
+width: 90%;
+}
+
+.character--cell {
+  /*background: blue;*/
+  width: calc(100% / 3 - 1rem - 1rem);
+  margin: 1rem 1rem;
+  position: fixed;
+  bottom: 4rem;
+  left: 1rem;
+  padding-left: 2rem;
+  overflow: hidden;
+  display: block;
+  transform: rotate(-5deg);
+}
+
+.character__content {
+width: auto;
+padding-bottom: 2.5rem;
+overflow: hidden;
+}
+
+.center--cell {
+  /*background: yellow;*/
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  display: inline-block;
+}
+.weapon--cell {
+  /*background: green;*/
+  width: calc(100% / 3 - 1rem - 1rem);
+  margin: 1rem 1rem;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0;
+  padding-right: 1.5rem;
+  overflow: hidden;
+  display: block;
+  transform: rotate(5deg);
+}
+
+img.character--cell__image {
+  width: 30%;
+  float: left;
+}
+img.weapon--cell__image {
+  width: 50%;
+  position: relative;
+  left: 2rem;
+
+
+}
+.ability--cell__image {
+  width: 14%;
+  margin: 0 0.3rem;
+  position: relative;
+  display: inline;
+  bottom: 1.3rem;
+  left: 1.5rem;
+
+}
+
+img.center--target__image {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 40%;
+
+}
+
+.character__stats {
+  font-family: 'share tech mono', monospace;
+  font-size: 0.8rem;
   margin: 0;
+  position: relative;
+  top: 2rem;
+  left: 1rem;
+  -webkit-text-stroke: 0.003rem #a5d2ee;
+  text-shadow: 0.5em rgba(#545454,.50);
+  opacity: 0.9;
+}
+.character__stats strong {
+font-size: 2rem;
+}
+
+.weapon__stats {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  margin: 0;
+  float: right;
+}
+
+.weapon__stats img {
+  vertical-align: middle;
+}
+
+.weapon__stats-numbers {
+   font-family: 'share tech mono', monospace;
+   font-size: 0.8rem;
+   margin: 0;
+  position: absolute;
+  top: 1.5rem;
+  right: 5rem;
+  -webkit-text-stroke: 0.003rem #a5d2ee;
+  text-shadow: 0.5em rgba(#545454,.50);
+ }
+
+ .weapon__stats-numbers strong {
+ font-size: 2rem;
+ }
+
+.ability__key {
+font-size: 1.6rem;
+letter-spacing: 1rem;
+position: absolute;
+bottom: 3.5rem;
+left: 3rem;
+}
+
+.center--cell p {
+  font-family: 'share tech mono', monospace;
+  font-size: 2.2em;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-text-stroke: 0.005rem #5c5c5c;
+  text-shadow: 1em rgba(#545454,.75);
+  opacity: 0.8;
+  position: relative;
+  top: 1rem;
+
+}
+.center--cell strong {
+  color: #a70000;
+}
+
+.fa-square {
+  letter-spacing: -0.3rem;
+  color: #fff;
+  transform: skew(-10deg,10deg) scaleY(2.5) scaleX(1);
+
+}
+.fa-square-damage {
+  color: #dca02b;
 }
