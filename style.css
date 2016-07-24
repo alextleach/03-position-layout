@@ -14,13 +14,13 @@ body {
 main {
 margin: 2rem auto;
 width: 100%;
-overflow: auto;
+overflow: hidden;
 display: inline-block;
 }
 
 .main--cell {
 margin: 0 auto;
-overflow: auto;
+overflow: hidden;
 width: 90%;
 }
 
@@ -32,7 +32,7 @@ width: 90%;
   bottom: 4rem;
   left: 1rem;
   padding-left: 2rem;
-  overflow: auto;
+  overflow: hidden;
   display: block;
   transform: rotate(-5deg);
 }
@@ -40,7 +40,7 @@ width: 90%;
 .character__content {
 width: auto;
 padding-bottom: 2.5rem;
-overflow: auto;
+overflow: hidden;
 }
 
 .center--cell {
@@ -49,7 +49,7 @@ overflow: auto;
   top: 55%;
   left: 50%;
   transform: translate(-50%,-50%);
-  overflow: auto;
+  overflow: hidden;
   display: inline-block;
 }
 .weapon--cell {
@@ -60,7 +60,7 @@ overflow: auto;
   bottom: 0.5rem;
   right: 0;
   padding-right: 1.5rem;
-  overflow: auto;
+  overflow: hidden;
   display: block;
   transform: rotate(5deg);
 }
@@ -76,10 +76,11 @@ img.weapon--cell__image {
 
 
 }
-img.ability--cell__image {
+.ability--cell__image {
   width: 14%;
   margin: 0 0.3rem;
   position: relative;
+  display: inline;
   bottom: 1.3rem;
   left: 1.5rem;
 
